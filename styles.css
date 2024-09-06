@@ -7,7 +7,7 @@
 
 /* Styling the body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
@@ -16,44 +16,101 @@ body {
 
 /* Header styling */
 header {
-    background: #333;
+    background: #3b5998;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
 }
 
 /* Main content styling */
 main {
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 900px;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Section styling */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
 }
 
 section h2 {
     margin-bottom: 10px;
     color: #333;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #3b5998;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
+/* Styling for paragraphs */
 section p {
     text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Image placeholders */
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Flexbox for aligning content and images */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-content img {
+    width: 80%;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .section-content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .section-content img {
+        width: 40%;
+        margin: 0;
+    }
+
+    .section-content p {
+        width: 60%;
+    }
 }
 
 /* Footer styling */
 footer {
     text-align: center;
     margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
 }
 
 footer a {
-    color: #0066cc;
+    color: #ffcc00;
     text-decoration: none;
 }
 
